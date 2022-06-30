@@ -1,0 +1,34 @@
+
+.inputBox {
+  border: solid black 2px;
+  padding: 10px;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+#submitButton {
+  margin-top: 5px;
+}
+
+#header {
+  text-align: center;
+  background-color: rgb(255, 123, 123);
+  height: 75px;
+  /* padding-top: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: solid black;
+}
+
+#imageOutput {
+  display: flex;
+  justify-content: center;
+}
+
+#imageOutput img {
+  width: 75%;
+  height: auto;
+}

@@ -7,23 +7,44 @@
   <title>Template</title>
 </head>
 <body>
+  <div id="header">
+    <h1>Image Maker!</h1>
+  </div>
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h1>Image Maker!</h1>
-      </div>
       <div class="col-3">
-        <form id="imageMaker">
-          <label for="text">Input Text</label>
-          <input  id="text" type="text">
-          <input type="submit">
+        <form class="inputBox" id="imageMaker">
+          <div class="form-group">
+            <label for="text">Input Text</label>
+            <input  id="text" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="textColor">Input text color</label>
+            <input id="textColor" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="backgroundColor">Input background color</label>
+            <input id="backgroundColor" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="fontFamily">Input font family (<a href="https://fonts.google.com/" target="_blank">Usable fonts</a>)</label>
+            <input id="fontFamily" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="textAlign">Text alignment</label>
+            <input id="textAlign" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="fontSize">Font Size</label>
+            <input id="fontSize" class="form-control" type="number">
+          </div>
+          <input id="submitButton" type="submit">
         </form>
       </div>
-      <div class="col-9">
+      <div class="col-9" id="imgOut">
         <div id="imageOutput"></div>
       </div>
     </div>
-
   </div>
 </body>
 </html>

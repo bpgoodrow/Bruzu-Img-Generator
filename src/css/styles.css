@@ -1,7 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+body{
+  background-color: rgb(252, 210, 210);
+}
 
 .inputBox {
-  border: solid black 2px;
   padding: 10px;
+  background-color: rgb(255, 123, 123);
+  color: rgb(252, 210, 210);
+  font-weight: bold;
+  filter: drop-shadow(2px 2px 1px rgb(255, 97, 97));
+  text-transform: uppercase;
+}
+
+.inputBox label {
+  filter: drop-shadow(2px 2px 0px rgb(255, 97, 97));
+  font-size: small;
+}
+
+a:link {
+  color: rgb(252, 210, 210);
+  
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(252, 210, 210);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 147, 147);
 }
 
 .container {
@@ -12,7 +41,9 @@
   margin-top: 5px;
 }
 
-#header {
+#upperHeader {
+  font-family: 'Archivo Black', sans-serif;
+  color: rgb(252, 210, 210);
   text-align: center;
   background-color: rgb(255, 123, 123);
   height: 75px;
@@ -20,15 +51,67 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: solid black;
 }
+
+#upperHeader h1 {
+  filter: drop-shadow(2px 2px 0px rgb(255, 97, 97));
+}
+
+#lowerHeader {
+  height: 40px;
+  background-color: rgb(255, 147, 147);
+}
+
 
 #imageOutput {
   display: flex;
   justify-content: center;
+  filter: drop-shadow(2px 2px 1px rgb(255, 97, 97));
 }
 
 #imageOutput img {
   width: 75%;
   height: auto;
+}
+
+.stranger {
+  position: absolute;
+  bottom: 40px;
+  width: 10%;
+  height: 100px;
+  left: 90%; 
+}
+
+.stranger img {
+  height: 100px;
+  width: auto;
+}
+
+.strangerReveal {
+  background-color: rgb(252, 210, 210);
+  position: absolute;
+  bottom: 40px;
+  height: 100px;
+  width: 100px;
+  left: 90%; 
+}
+
+.strangerReveal:hover{
+  display: none;
+}
+
+.upperFooter {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(255, 147, 147);
+  position: absolute;
+  bottom: 50px;
+}
+
+.lowerFooter {
+  background-color: rgb(255, 123, 123);
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
 }

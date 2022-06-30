@@ -7,13 +7,15 @@
   <title>Template</title>
 </head>
 <body>
-  <div id="header">
-    <h1>Image Maker!</h1>
+  <div id="upperHeader">
+    <h1>IMAGE MAKER</h1>
+  </div>
+  <div id="lowerHeader">
   </div>
   <div class="container">
     <div class="row">
       <div class="col-3">
-        <form class="inputBox" id="imageMaker">
+        <form class="inputBox" id="imageMaker">   
           <div class="form-group">
             <label for="text">Input Text</label>
             <input  id="text" class="form-control" type="text">
@@ -21,6 +23,10 @@
           <div class="form-group">
             <label for="textColor">Input text color</label>
             <input id="textColor" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="textBgColor">Input background text color</label>
+            <input  id="textBgColor" class="form-control" type="text">
           </div>
           <div class="form-group">
             <label for="backgroundColor">Input background color</label>
@@ -38,6 +44,10 @@
             <label for="fontSize">Font Size</label>
             <input id="fontSize" class="form-control" type="number">
           </div>
+          <div class="form-group">
+            <label for="image">Use a random background image?</label>
+            <input  id="image" type="checkbox">
+          </div>
           <input id="submitButton" type="submit">
         </form>
       </div>
@@ -46,5 +56,9 @@
       </div>
     </div>
   </div>
+  <div class="stranger"><img src="../assets/images/mysterious-stranger.png" alt="Mysterious_Stranger"></div>
+  <div class="strangerReveal"></div>
+  <div class="upperFooter"></div>
+  <div class="lowerFooter"></div>
 </body>
 </html>
